@@ -270,6 +270,8 @@ nav {
         /*CSS DOODLE*/
 #intro {
     text-align: center;
+    width: 90%;
+    margin: auto;
 }
         
 #cssPortrait {
@@ -482,7 +484,7 @@ nav {
 
 .content {
     margin: auto;
-    width: 60%
+    width: 70%
 }
 
 .mark {
@@ -687,6 +689,10 @@ footer p {
         margin-left: -230px;
     }
 
+    .mark {
+        margin: 15px;
+    }
+
     #projects {
         width: 90%;
     }
@@ -711,6 +717,10 @@ footer p {
 
     .colored {
         padding-bottom: 120px;
+    }
+
+    .mark {
+        margin: 5px;
     }
 
     .dark {
