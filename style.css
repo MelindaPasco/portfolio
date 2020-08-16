@@ -112,7 +112,7 @@ nav {
 #activeZone:hover .container {
     transform: scale(1.03);
     width: 220px;
-    margin-right: 100px;
+    margin-right: 120px;
 }
 
 #activeZone:hover .left-side {
@@ -586,6 +586,11 @@ nav {
 
 
         /*TECHNO*/
+#techno {
+    width: 90%;
+    margin: auto;
+}
+
 .tech {
     display: inline-block;
     font-size: large;
@@ -593,6 +598,7 @@ nav {
     padding: 15px;
     border-radius: 25px;
     background-color: #222222;
+    margin: 2px;
 }
 
 
@@ -636,6 +642,7 @@ footer p {
 @media only screen and (max-width: 1024px) {
     .preview {
         width: 30%;
+        pointer-events: none;
     }
 
     .overlay {
@@ -650,7 +657,6 @@ footer p {
     .legend {
         position: absolute;
         text-align: center;
-        font-size: 2vh;
         width: 100%;
         color: white;
     }
@@ -658,19 +664,81 @@ footer p {
     .lang {
         position: absolute;
         text-align: center;
-        font-size: 1.5vh;
         width: 100%;
         bottom: 10px;
         color: white;
     }
 }
 
-@media only screen and (max-width: 480px) {
-    .container {
-        transform: scale(0.7);
+@media only screen and (max-width: 750px) {
+    nav {
+        margin-bottom: 80px;
+        text-align: center;
     }
-    .new {
-        font-size: 22px;
+    #logo {
+        float: none;
+        display: block;
+        margin: auto;
     }
 
+    #activeZone {
+        top: 75px;
+        left: 50%;
+        margin-left: -230px;
+    }
+
+    #projects {
+        width: 90%;
+    }
+    
+    .preview {
+        display: inline-block;
+        position: relative;
+        width: 45%;
+        height: calc(100vw * 0.4);
+    }
+
+    .illustration {
+        left: -29%;
+    }
+}
+
+@media only screen and (max-width: 520px) {
+    #activeZone {
+        pointer-events: none;
+        transform: scale(0.7);
+    }
+
+    .colored {
+        padding-bottom: 120px;
+    }
+
+    .dark {
+        transform: scale(0.9);
+        margin-top: -50px;
+    }
+    .dark h2 {
+        width: 100%;
+        font-size: small;
+    }
+
+    .preview {
+        display: inline-block;
+        position: relative;
+        width: 90%;
+        height: calc(100vw * 0.7);
+    }
+
+    .illustration {
+        left: -17%;
+    }
+
+    #contact {
+        transform: scale(0.9);
+        margin-top: -180px;
+    }
+
+    footer {
+        padding-bottom: 75px;
+    }
 }
