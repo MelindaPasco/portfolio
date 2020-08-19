@@ -15,7 +15,7 @@ function textSequence(i) {
         setTimeout(function() {
             document.getElementById("sequence").innerHTML = likes[i];
             textSequence(++i);
-        }, 2500);
+        }, 2250);
 
     } else if (likes.length == i) {
         textSequence(0);
