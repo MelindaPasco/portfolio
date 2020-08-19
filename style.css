@@ -644,7 +644,10 @@ footer p {
 @media only screen and (max-width: 1024px) {
     .preview {
         width: 30%;
-        pointer-events: none;
+    }
+
+    .illustration {
+        left: -56%;
     }
 
     .overlay {
@@ -661,6 +664,7 @@ footer p {
         text-align: center;
         width: 100%;
         color: white;
+        font-size: 25px;
     }
     
     .lang {
@@ -669,7 +673,17 @@ footer p {
         width: 100%;
         bottom: 10px;
         color: white;
+        font-size: 22px;
     }
+
+    .preview:hover > .legend {
+        font-size: 25px;
+    }
+    
+    .preview:hover > .lang {
+        font-size: 22px;
+    }
+    
 }
 
 @media only screen and (max-width: 750px) {
@@ -711,7 +725,6 @@ footer p {
 
 @media only screen and (max-width: 520px) {
     #activeZone {
-        pointer-events: none;
         transform: scale(0.7);
     }
 
