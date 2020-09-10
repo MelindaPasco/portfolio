@@ -1,5 +1,5 @@
 :root {
-    --main: rgb(102, 158, 194);
+    --main: rgb(52, 122, 183);
     --main--dark: rgb(15, 76, 129); 
     --highlight: rgb(229, 120, 104);
 }
@@ -528,9 +528,9 @@ nav {
     background-color: rgb(28, 50, 85);
     border-radius: 25px;
     box-shadow:  
-        -6px -20px 35px rgb(115, 178, 218), 
-        -6px -10px 15px rgb(115, 178, 218), 
-        -20px 0px 30px rgb(115, 178, 218), 
+        -6px -20px 35px rgb(68, 156, 211),  
+        -6px -10px 15px rgb(68, 156, 211),  
+        -20px 0px 30px rgb(68, 156, 211), 
         6px 20px 25px rgba(0,0,0,0.2);
     cursor:pointer;
 }
