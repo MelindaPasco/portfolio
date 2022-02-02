@@ -5,7 +5,7 @@
     <title>Portfolio - Melinda Pasco</title>
  
     <!-- Meta Informations -->
-    <meta name="description" content="Portfolio de Melinda Pasco, Developpeuse Front">
+    <meta name="description" content="Melinda Pasco's Portfolio, Front Dev">
     <meta name="author" content="Melinda Pasco">
     <meta name="robots" content="index, follow">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,39 +19,16 @@
 </head>
  
 <body>
-    <header>
-        <nav>
-            <div id="logo" class="waves" data-word="Portfolio">Portfolio</div>
+    <div class="wrapper">
+        <header>
+            <nav>
+                <div id="logo" data-word="Portfolio">Melinda Pasco</div>
 
-            <div id="activeZone">
-                <a href="mailto:melinda.pasco@epitech.eu">
-                    <div id="fixLink">
-                        <div class="container">
-                            <div class="left-side">
-                                <div class="card">
-                                    <div class="card-line"></div>
-                                </div>
-                                    
-                                <div class="post">
-                                    <div class="screen">
-                                        <div class="symbol">@</div>
-                                    </div>
-                                </div>
-                            </div>
-                        
-                            <div class="right-side">
-                                <div class="new">Me contacter</div>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-        </nav>
-    
-        
+                <a id="nav-btn" href="mailto:melinda.pasco@epitech.eu">Me contacter</a>
+            </nav>
+        </header>
+
         <div id="intro">
-            <h1>Bonjour et bienvenue !</h1>
-
             <div id="cssPortrait">
                 <div id="mainFace"></div>
                 <div id="chin"></div>
@@ -74,170 +51,135 @@
 
                 <div id="background"></div>
             </div>
+            <h1>Bonjour !</h1>
+        </div>
 
-            <div id="who">
-                <h1>Melinda Pasco</h1>
-                <h2>Psychosociologue & Developpeuse Front</h2>
+        <div class="container">
+            <h2 class="title">Projets</h2>
+            <a href="https://melindapasco.github.io/webdesign-intro/" target="_blank" class="project">
+                <h3>Première Intégration</h3>
+                <p>
+                    Projet d'apprentissage.<br>
+                    Tout premier projet de formation: Intégration à partir d'une maquette.
+                </p>
+                <p>HTML & CSS</p>
+            </a>
+            <a href="https://melindapasco.github.io/webdesign-sass" target="_blank" class="project">
+                <h3>Intégration</h3>
+                <p>
+                    Projet d'apprentissage.<br>
+                    Intégration en utilisant SASS.
+                </p>
+                <p>HTML, CSS & SASS</p>
+            </a>
+            <a href="https://melindapasco.github.io/puissance4/" target="_blank" class="project">
+                <h3>Puissance 4</h3>
+                <p>
+                    Projet d'apprentissage.<br>
+                    Ecrit en JS: règles de victoire, 
+                    ainsi que des options de custumisation (nom et couleur des joueurs, taille de la grille).
+                </p>
+                <p>HTML, CSS & Javascript</p>
+            </a>
+            <a href="https://melindapasco.github.io/emoji-factory/" target="_blank" class="project">
+                <h3>Smiley Factory</h3>
+                <p>
+                    Projet d'apprentissage.<br>
+                    Constructeur de Smiley pour comprendre s'entrainer à l'animation en JS.
+                </p>
+                <p>HTML, CSS, Javascript & GSAP</p>
+            </a>
+            <a href="https://melindapasco.github.io/webdesign-bootstrap/" target="_blank" class="project">
+                <h3>Store Page</h3>
+                <p>
+                    Projet d'apprentissage.<br>
+                    Vitrine type e-commerce à l'aide de Bootstrap.
+                </p>
+                <p>HTML, CSS & Bootstrap</p>
+            </a>
+            <a href="https://melindapasco.github.io/webdesign-materialize/" target="_blank" class="project">
+                <h3>Store Page</h3>
+                <p>
+                    Projet d'apprentissage.<br>
+                    Vitrine type e-commerce avec Materialize cette fois.
+                </p>
+                <p>HTML, CSS & Materialize</p>
+            </a>
+            <a href="https://melindapasco.github.io/pokedex" target="_blank" class="project">
+                <h3>Pokedex</h3>
+                <p>
+                    Projet d'apprentissage.<br>
+                    Explorez la 1ère génération de Pokemon grace à la PokeApi !
+                </p>
+                <p>Angular & RESTful API</p>
+            </a>
+            <a href="https://melindapasco.github.io/react-intro/" target="_blank" class="project">
+                <h3>To Do List</h3>
+                <p>
+                    Projet d'apprentissage.<br>
+                    La classique To Do List pour travailler les composants.
+                </p>
+                <p>REACT</p>
+            </a>
+            <a href="https://melindapasco.github.io/css-challenges/" target="_blank" class="project">
+                <h3>CSS Challenges</h3>
+                <p>
+                    Projet personnel<br>
+                    J'aime jouer avec le CSS, voici donc ma sandbox, inspiré par les CSS Challenges que l'ont peut trouver sur internet.
+                </p>
+                <p>HTML & CSS</p>
+            </a>
+            <a target="_blank" class="project">
+                <h3>// En construction //</h3>
+                <p>
+                    Projet personnel<br>
+                    Gallerie de jeux video F2P avec FreeToGame Api.
+                </p>
+                <p>Vue & API</p>
+            </a>
+
+            <a href="https://github.com/MelindaPasco" target="_blank" id="btnGit" class="btnGlass"><div>Link to my git</div></a>
+        </div>
+
+        <div id="about">
+            <p>Pour en savoir plus :</p>
+
+            <a href="https://www.linkedin.com/in/melinda-pasco-5087b5118/" target="_blank" id="btnIn" class="btnGlass"><div><b>Linkedin</b></div></a>
+            <a href="media/CV_Melinda_Pasco.pdf" target="_blank" download id="btnCv" class="btnGlass"><div><b>Mon CV</b></div></a>
+        </div>
+
+        <div id="techs">
+            <h2>J'utilise :</h2>
+            <div id="techno">
+                <div class="tech--main">HTML</div>
+                <div class="tech--main">CSS</div>
+                <div class="tech--main">JavaScript</div>
+            </div>
+            <div id="techno">
+                <div class="tech">Bootstrap</div>
+                <div class="tech">Figma</div>
+                <div class="tech">Git</div>
+                <div class="tech">SASS</div>
+                <div class="tech">Stimulus</div>
+                <div class="tech">Tailwind</div>
+                <div class="tech">Vue</div>
+            </div>
+            <h3>Pas utilisé depuis un moment, mais je peux m'y remettre :</h3>
+            <div id="techno">
+                <div class="tech">Angular</div>
+                <div class="tech">Materialize</div>
+                <div class="tech">React</div>
+                <div class="tech">Wordpress</div>
             </div>
         </div>
-    </header>
-
-    <div id="parcours" class="colored">
-        <div class="content">
-            <h2>Mon arrivée dans le fabuleux monde du code</h2>
-            
+    
+        <footer>
             <p>
-                Formée à la psychologie de la consommation et du marketing à <b>Nanterre</b>, mon parcours a commencé dans un cabinet d'étude marketing parisien.
-                <br><br>
-                Passionnée de digital, je suis ensuite devenue chargée d'étude dans une agence d'ergonomie et d'UX Design.
-                <br><br>
-                Curieuse et avide de connaissances, j'ai commencé à apprendre le javascript avec le web.
-                <br><br>
-                J'ai décidé d'en faire mon metier avec une formation <b>{&nbsp;Epitech&nbsp;}</b>.           
+                Au plaisir d'échanger avec vous,
+                et en vous souhaitant une agréable journée !
             </p>
-            
-            <br><br>
-            <p><b>Pour plus de détail:</b></p>
-            
-            <a id="linkedin" href="https://www.linkedin.com/in/melinda-pasco-5087b5118/" target="_blank">
-                <div class="mark">
-                    <div class="press"><p>Linkedin</p></div>
-                </div>   
-            </a>
-            <a id="cv" href="media/CV_Melinda_Pasco.pdf" target="_blank" download>
-                <div class="mark">
-                    <div class="press"><p>Mon CV</p></div>
-                </div>       
-            </a>
-        </div>
+        </footer>
     </div>
-
-    <div class="dark">
-        <div class="content">
-            <h2><span class="blush">J'aime </span><span id="sequence"></span><span class="blush"> &#10084;</span></h2>
-        </div>
-    </div>
-
-    <div id="projects">
-        <h2><span class="larger">Projets</span></h2>
-        
-        <br><br>
-        <a href="https://melindapasco.github.io/webdesign-intro/" target="_blank">
-            <div class="preview">
-                <img src="media/projet1.jpg" alt="preview de ma première maquette" class="illustration">
-                <div class="overlay"></div>
-                <h3 class="legend">1ère<br>Maquette</h3>
-                <p class="lang">HTML / CSS</p>
-            </div>
-        </a>
-
-        <a href="https://melindapasco.github.io/webdesign-sass" target="_blank">
-            <div class="preview">
-                <img src="media/projet2.jpg" alt="preview du projet maquette" class="illustration">
-                <div class="overlay"></div>
-                <h3 class="legend">Maquette</h3>
-                <p class="lang">SASS</p>
-            </div>
-        </a>
-
-        <a href="https://melindapasco.github.io/puissance4/" target="_blank">
-            <div class="preview">
-                <img src="media/projet3.jpg" alt="preview du puissance 4" class="illustration">
-                <div class="overlay"></div>
-                <h3 class="legend">Puissance 4</h3>
-                <p class="lang">JavaScript</p>
-            </div>
-        </a>
-
-        <a href="https://melindapasco.github.io/emoji-factory/" target="_blank">
-            <div class="preview">
-                <img src="media/projet4.jpg" alt="illustration du projet d'animation" class="illustration">
-                <div class="overlay"></div>
-                <h3 class="legend">Smiley Factory</h3>
-                <p class="lang">GSAP</p>
-            </div>
-        </a>
-
-        <a href="https://melindapasco.github.io/webdesign-bootstrap/" target="_blank">
-            <div class="preview">
-                <img src="media/projet7.jpg" alt="preview de ma première maquette" class="illustration">
-                <div class="overlay"></div>
-                <h3 class="legend">Store Page</h3>
-                <p class="lang">Bootstrap</p>
-            </div>
-        </a>
-
-        <a href="https://melindapasco.github.io/webdesign-materialize/" target="_blank">
-            <div class="preview">
-                <img src="media/projet5.jpg" alt="preview du mock-up d'e-commerce" class="illustration">
-                <div class="overlay"></div>
-                <h3 class="legend">Store Page</h3>
-                <p class="lang">Materialize</p>
-            </div>
-        </a>
-
-        <a href="https://melindapasco.github.io/pokedex" target="_blank">
-            <div class="preview">
-                <img src="media/projet6.jpg" alt="illustration du projet pokedex" class="illustration">
-                <div class="overlay"></div>
-                <h3 class="legend">Pokedex</h3>
-                <p class="lang">Angular / RESTful API</p>
-            </div>
-        </a>
-
-        <a href="https://melindapasco.github.io/react-intro/" target="_blank">
-            <div class="preview">
-                <img src="media/projet8.jpg" alt="illustration du projet pokedex" class="illustration">
-                <div class="overlay"></div>
-                <h3 class="legend">To Do List</h3>
-                <p class="lang">React</p>
-            </div>
-        </a>
-
-        <a href="https://melindapasco.github.io/css-challenges/" target="_blank">
-            <div class="preview">
-                <img src="media/projet9.jpg" alt="illustration du projet pokedex" class="illustration">
-                <div class="overlay"></div>
-                <h3 class="legend">CSS<br>Challenges</h3>
-                <p class="lang">CSS</p>
-            </div>
-        </a>
-
-        <p>&#9658; <a href="https://github.com/MelindaPasco" target="_blank"><b>Pour voir le git c'est ici !</b></a></p>
-
-    </div>
-
-    <div class="colored">
-        <h2>Technologies</h2>
-
-
-        <div id="techno">
-            <div class="tech">HTML</div>
-            <div class="tech">CSS</div>
-            <div class="tech">JavaScript</div>
-            <div class="tech">SASS</div>
-            <div class="tech">Bootstrap</div>
-            <div class="tech">Materialize</div>
-            <div class="tech">Git</div>
-            <div class="tech">Angular</div>
-            <div class="tech">React</div>
-            <div class="tech">Vue</div>
-            <div class="tech">Wordpress</div>
-        </div>
-    </div>
-   
-    <footer>
-        <a id="mailing" href="mailto:melinda.pasco@epitech.eu">
-            <div id="contact">
-                <h2><i class="fa fa-envelope"></i> Intéressé ? Contactez moi !</h2>
-            </div>
-        </a>
-
-        <p>
-            Au plaisir d'échanger avec vous,<br>
-            et en vous souhaitant une agréable journée !
-        </p>
-    </footer>
 
     <script src= "script.js"></script>
 </body>

@@ -1,0 +1,512 @@
+@mixin glassmorph($--transparency) {
+    background-color: rgba(255, 255, 255, $--transparency);
+    backdrop-filter: blur(10px);
+    box-shadow: 5px 10px 20px rgba(0,0,0,0.2);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+@mixin piles ($--bg, $--color) {
+    background-color: $--bg;
+    color: $--color;
+    padding: 5px 25px;
+    border-radius: 25px;
+    box-shadow: 5px 10px 20px rgba(0,0,0,0.2);
+    font-weight: bold;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+body {
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    background-image: url('media/bg_bggenerator_circles.jpg');
+    background-size: cover;
+    font-family: 'Lato', sans-serif;
+    color: white;
+
+    .wrapper {
+        height: 100vh;
+        overflow-y: scroll;
+    }
+    h1 {
+        word-break: break-word;
+        font-family: 'Roboto', sans-serif;
+        font-size: 32px;
+    }
+    h2 {
+        font-family: 'Roboto', sans-serif;
+        font-size: 22px;
+        font-weight: normal;
+        text-align: center;
+    }
+    h3 {
+        font-size: 20px;
+    }
+    p {
+        font-family: 'Lato', sans-serif;
+        font-size: 18px;
+    }
+    a {
+        text-decoration: none;
+    }
+    .btnGlass {
+        @include glassmorph(0.3);
+        position: absolute;
+        bottom: -30px;
+        border-radius: 30px;
+        div {
+            background: white;
+            color: #2C46FF;
+            font-weight: bold;
+            margin: 10px;
+            padding: 10px 20px;
+            border-radius: 30px;
+        }
+        &:hover {
+            box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.2);
+        }
+    }
+}
+
+@keyframes slideDown {
+    from {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+}
+header {
+    position: sticky;
+    top: 0;
+    z-index: 5;
+    color: black;
+    animation: 1s ease-out slideDown;
+
+    nav {
+        @include glassmorph(0.5);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 52px;
+        border: none;
+
+        #logo {
+            font-family: 'Pacifico', cursive;
+            font-weight: bold;
+            font-size: 40px;
+        }
+        a {
+            @include piles(#C48FFD, white);
+            &:hover {
+                background-color: #D392FD;
+                box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.2);
+            }
+        }
+    }
+}
+
+#intro {
+    text-align: center;
+    width: 90%;
+    margin: 25px auto;
+
+    #cssPortrait { /*CSS DOODLE*/
+        @include glassmorph(0.3);
+        position: relative;
+        overflow: hidden;
+        margin: auto;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        border: solid 2px white;
+        z-index: 1;
+    
+        #mainFace {
+            position: absolute;
+            background-color: rgb(224, 177, 171);
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            left: 50px;
+            top: 30px;
+        }    
+        #chin {
+            position: absolute;
+            background-color: rgb(224, 177, 171);
+            width: 100px;
+            height: 100px;
+            border-radius: 48% 52% 51% 49% / 23% 25% 75% 77%;
+            left: 50px;
+            top: 55px;
+        }  
+        #eyeLeft {
+            position: absolute;
+            background-color: black;
+            width: 8px;
+            height: 15px;
+            border-radius: 50%;
+            top: 87px;
+            left: 77px;
+        }    
+        #eyeRight{
+            position: absolute;
+            background-color: black;
+            width: 8px;
+            height: 15px;
+            border-radius: 50%;
+            top: 87px;
+            left: 112px;
+        }   
+        #nose {
+            position: absolute;
+            background-color: rgb(190, 136, 129);
+            width: 12px;
+            height: 7px;
+            top: 115px;
+            left: 93px;
+            border-bottom-left-radius: 50%;
+            border-bottom-right-radius: 50%;
+        }   
+        #mouth {
+            position: absolute;
+            border-bottom: solid 3px black;
+            width: 30px;
+            height: 10px;
+            top: 125px;
+            left: 85px;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 10px;
+        }   
+        #hairTop {
+            position: absolute;
+            background-color: black;
+            width: 108px;
+            height: 40px;
+            top: 22px;
+            left: 51px;
+            border-radius: 48% 52% 52% 48% / 83% 87% 13% 17%;
+        }   
+        #hairPerspect {
+            position: absolute;
+            border-top: solid 2px dimgray;
+            width: 45px;
+            height: 35px;
+            top: 39px;
+            left: 61px;
+            border-radius: 50%;
+        }   
+        #mouth {
+            position: absolute;
+            border-bottom: solid 3px white;
+            width: 30px;
+            height: 10px;
+            top: 125px;
+            left: 85px;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 10px;
+        }   
+        #hairLeftSide {
+            position: absolute;
+            background-color: black;
+            width: 14px;
+            height: 54px;
+            top: 50px;
+            left: 45px;
+            border-top-left-radius: 25px;
+            border-bottom-left-radius: 25px;
+        }    
+        #ear {
+            position: absolute;
+            background-color: rgb(224, 177, 171);
+            width: 14px;
+            height: 26px;
+            border-radius: 50%;
+            top: 95px;
+            left: 44px;
+            transform: rotate(-12deg);
+        }   
+        #hairRightSide {
+            position: absolute;
+            background-color: black;
+            width: 40px;
+            height: 55px;
+            top: 51px;
+            left: 113px;
+            border-bottom-left-radius: 40px;
+            transform: rotate(-15deg);
+        }    
+        #hairRightPoint {
+            position: absolute;
+            width: 90px;
+            height: 42px;
+            top: 71px;
+            left: 89px;
+            border-bottom: solid 25px black;
+            border-radius: 0 0 0 100%;
+            transform: rotate(-105deg);
+        }
+        #hairRightString {
+            position: absolute;
+            width: 90px;
+            height: 42px;
+            top: 60px;
+            left: 99px;
+            border-bottom: solid 25px black;
+            border-radius: 0 0 0 100%;
+            transform: rotate(-120deg);
+        }    
+        #neck {
+            position: absolute;
+            background-color: rgb(224, 177, 171);
+            width: 35px;
+            height: 30px;
+            top: 150px;
+            left: 83px;
+            border-bottom-left-radius: 50%;
+            border-bottom-right-radius: 50%;
+            z-index: -1;
+        }   
+        #neck::after {
+            content: "";
+            position: absolute;
+            background-color: rgb(190, 136, 129);
+            width: 35px;
+            height: 10px;
+            left: 0px;
+            border-bottom-left-radius: 50%;
+            border-bottom-right-radius: 50%;
+            z-index: -1;
+        }   
+        #shoulder {
+            position: absolute;
+            background-color: maroon;
+            width: 130px;
+            height: 40px;
+            border-radius: 40% 40% 50% 50% / 30% 30% 70% 70% ;
+            margin-top: 161px;
+            margin-left: 35px;
+            z-index: -2;
+        }    
+        #background {
+            position: absolute;
+            width: 203px;
+            height: 203px;
+            top: -1px;
+            left: -1px;
+            border-radius: 50%;
+            z-index: -3;
+        }
+    }
+}
+
+@keyframes slideUp {
+    from {
+      transform: translateY(50%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+}
+.container {
+    @include glassmorph(0.1);
+    animation: 1.5s ease-out slideUp;
+    margin: 40px auto 100px;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    justify-content: space-around;
+    width: 90%;
+    max-width: 1300px;
+    border-radius: 25px;
+    padding-bottom: 40px;
+
+    .title {
+        @include glassmorph(0.7);
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        margin: 0;
+        margin-bottom: 25px;
+        width: 100%;
+        padding: 25px 30px;
+        text-transform: uppercase;
+        color: black;
+    }
+    .project {
+        @include glassmorph(0.2);
+        background: rgba(2, 2, 2, 1);
+        position: relative;
+        width: 26%;
+        border-radius: 20px;
+        margin: 0 1% 20px;
+        padding: 5px 20px;
+        text-decoration: none;
+        color: inherit;
+        overflow: hidden;
+
+        &:nth-child(2):before {
+            background-image: url('media/projet1.jpg');
+        }
+        &:nth-child(3):before {
+            background-image: url('media/projet2.jpg');
+        }
+        &:nth-child(4):before {
+            background-image: url('media/projet3.jpg');
+        }
+        &:nth-child(5):before {
+            background-image: url('media/projet4.jpg');
+        }
+        &:nth-child(6):before {
+            background-image: url('media/projet5.jpg');
+        }
+        &:nth-child(7):before {
+            background-image: url('media/projet7.jpg');
+        }
+        &:nth-child(8):before {
+            background-image: url('media/projet6.jpg');
+        }
+        &:nth-child(9):before {
+            background-image: url('media/projet8.jpg');
+        }
+        &:nth-child(10):before {
+            background-image: url('media/projet9.jpg');
+        }
+    }
+    .project:before {
+        content: ' ';
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0.2;
+        background-repeat: no-repeat;
+        background-position: 50% 0;
+        background-size: cover;
+        z-index: -1;
+        transition: opacity 0.5s;
+        -webkit-transition: opacity 0.5s;
+    }
+    .project:hover:before {
+        opacity: 0.7;
+    }
+    #btnGit {
+        @extend .btnGlass;
+    }
+}
+
+#about {
+    @include glassmorph(0.1);
+    width: fit-content;
+    margin: 40px auto 100px;
+    padding: 15px 60px 25px;
+    border-radius: 20px;
+    font-weight: bold;
+    justify-content: center;
+    #btnIn {
+        left: -60px;
+    }
+    #btnCv {
+        right: -60px;
+    }
+}
+
+#techs {
+    width: 90%;
+    text-align: center;
+    margin: 40px auto;
+
+    #techno {
+        margin-bottom: 10px;
+        .tech {
+            @include glassmorph(0.3);
+            @include piles(rgba(255, 255, 255, 0.2), black);
+            display: inline-block;
+            font-size: large;
+            width: fit-content;
+            padding: 15px;
+            margin: 2px;
+
+            &--main {
+                @extend .tech;
+                @include glassmorph(0.5);
+                box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.4);
+            }
+        }
+    }
+}
+
+footer {
+    @include glassmorph(0.5);
+    padding: 5px 25px;
+    text-align: center;
+    color: black;
+    
+    p {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .preview {
+        width: 30%;
+    }
+
+    .illustration {
+        left: -56%;
+    }
+}
+
+@media only screen and (max-width: 890px) {
+    #nav-btn {
+        @include piles(#7c73ff, white);
+        &:hover {
+            background-color: #5335fd;
+            box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.2);
+        }
+    }
+    .container .project {
+        width: 40%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+    .container .project {
+        width: 70%;
+    }
+    
+    .preview {
+        display: inline-block;
+        position: relative;
+        width: 45%;
+        height: calc(100vw * 0.4);
+    }
+
+    .illustration {
+        left: -17%;
+    }
+    #about {
+        #btnIn {
+            left: 0px;
+        }
+        #btnCv {
+            right: 0px;
+        }
+    }
+
+    footer {
+        margin-top: 50px;
+        p {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+    }
+}
