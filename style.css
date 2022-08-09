@@ -4,53 +4,44 @@ body {
   height: 100vh;
   background-image: url("media/bg_bggenerator_circles.jpg");
   background-size: cover;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   color: white;
 }
-
 body .wrapper {
   height: 100vh;
   overflow-y: scroll;
 }
-
 body h1 {
   word-break: break-word;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 32px;
 }
-
 body h2 {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 22px;
   font-weight: normal;
   text-align: center;
 }
-
 body h3 {
   font-size: 20px;
 }
-
 body p {
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 18px;
 }
-
 body a {
   text-decoration: none;
 }
-
 body .btnGlass, body .container #btnGit, .container body #btnGit {
   background-color: rgba(255, 255, 255, 0.3);
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
-  -webkit-box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.2);
-          box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.2);
   border: 1px solid rgba(255, 255, 255, 0.3);
   position: absolute;
   bottom: -30px;
   border-radius: 30px;
 }
-
 body .btnGlass div, body .container #btnGit div, .container body #btnGit div {
   background: white;
   color: #2C46FF;
@@ -59,38 +50,31 @@ body .btnGlass div, body .container #btnGit div, .container body #btnGit div {
   padding: 10px 20px;
   border-radius: 30px;
 }
-
 body .btnGlass:hover, body .container #btnGit:hover, .container body #btnGit:hover {
-  -webkit-box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.2);
-          box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.2);
+  box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.2);
 }
 
 @-webkit-keyframes slideDown {
   from {
-    -webkit-transform: translateY(-100%);
-            transform: translateY(-100%);
+    transform: translateY(-100%);
     opacity: 0;
   }
   to {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
+    transform: translateY(0);
     opacity: 1;
   }
 }
 
 @keyframes slideDown {
   from {
-    -webkit-transform: translateY(-100%);
-            transform: translateY(-100%);
+    transform: translateY(-100%);
     opacity: 0;
   }
   to {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
+    transform: translateY(0);
     opacity: 1;
   }
 }
-
 header {
   position: -webkit-sticky;
   position: sticky;
@@ -100,48 +84,35 @@ header {
   -webkit-animation: 1s ease-out slideDown;
           animation: 1s ease-out slideDown;
 }
-
 header nav {
   background-color: rgba(255, 255, 255, 0.5);
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
-  -webkit-box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.2);
-          box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.2);
   border: 1px solid rgba(255, 255, 255, 0.3);
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
   padding: 15px 52px;
   border: none;
 }
-
 header nav #logo {
-  font-family: 'Pacifico', cursive;
+  font-family: "Pacifico", cursive;
   font-weight: bold;
   font-size: 40px;
 }
-
 header nav a {
   background-color: #C48FFD;
   color: white;
   padding: 5px 25px;
   border-radius: 25px;
-  -webkit-box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.2);
-          box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.2);
   font-weight: bold;
   border: 1px solid rgba(255, 255, 255, 0.3);
 }
-
 header nav a:hover {
   background-color: #D392FD;
-  -webkit-box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.2);
-          box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.2);
+  box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.2);
 }
 
 #intro {
@@ -149,14 +120,11 @@ header nav a:hover {
   width: 90%;
   margin: 25px auto;
 }
-
-#intro #cssPortrait {
-  /*CSS DOODLE*/
+#intro #cssPortrait { /*CSS DOODLE*/
   background-color: rgba(255, 255, 255, 0.3);
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
-  -webkit-box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.2);
-          box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.2);
   border: 1px solid rgba(255, 255, 255, 0.3);
   position: relative;
   overflow: hidden;
@@ -167,27 +135,24 @@ header nav a:hover {
   border: solid 2px white;
   z-index: 1;
 }
-
 #intro #cssPortrait #mainFace {
   position: absolute;
-  background-color: #e0b1ab;
+  background-color: rgb(224, 177, 171);
   width: 100px;
   height: 100px;
   border-radius: 50%;
   left: 50px;
   top: 30px;
 }
-
 #intro #cssPortrait #chin {
   position: absolute;
-  background-color: #e0b1ab;
+  background-color: rgb(224, 177, 171);
   width: 100px;
   height: 100px;
-  border-radius: 48% 52% 51% 49% / 23% 25% 75% 77%;
+  border-radius: 48% 52% 51% 49%/23% 25% 75% 77%;
   left: 50px;
   top: 55px;
 }
-
 #intro #cssPortrait #eyeLeft {
   position: absolute;
   background-color: black;
@@ -197,7 +162,6 @@ header nav a:hover {
   top: 87px;
   left: 77px;
 }
-
 #intro #cssPortrait #eyeRight {
   position: absolute;
   background-color: black;
@@ -207,10 +171,9 @@ header nav a:hover {
   top: 87px;
   left: 112px;
 }
-
 #intro #cssPortrait #nose {
   position: absolute;
-  background-color: #be8881;
+  background-color: rgb(190, 136, 129);
   width: 12px;
   height: 7px;
   top: 115px;
@@ -218,7 +181,6 @@ header nav a:hover {
   border-bottom-left-radius: 50%;
   border-bottom-right-radius: 50%;
 }
-
 #intro #cssPortrait #mouth {
   position: absolute;
   border-bottom: solid 3px black;
@@ -229,7 +191,6 @@ header nav a:hover {
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 10px;
 }
-
 #intro #cssPortrait #hairTop {
   position: absolute;
   background-color: black;
@@ -237,9 +198,8 @@ header nav a:hover {
   height: 40px;
   top: 22px;
   left: 51px;
-  border-radius: 48% 52% 52% 48% / 83% 87% 13% 17%;
+  border-radius: 48% 52% 52% 48%/83% 87% 13% 17%;
 }
-
 #intro #cssPortrait #hairPerspect {
   position: absolute;
   border-top: solid 2px dimgray;
@@ -249,7 +209,6 @@ header nav a:hover {
   left: 61px;
   border-radius: 50%;
 }
-
 #intro #cssPortrait #mouth {
   position: absolute;
   border-bottom: solid 3px white;
@@ -260,7 +219,6 @@ header nav a:hover {
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 10px;
 }
-
 #intro #cssPortrait #hairLeftSide {
   position: absolute;
   background-color: black;
@@ -271,19 +229,16 @@ header nav a:hover {
   border-top-left-radius: 25px;
   border-bottom-left-radius: 25px;
 }
-
 #intro #cssPortrait #ear {
   position: absolute;
-  background-color: #e0b1ab;
+  background-color: rgb(224, 177, 171);
   width: 14px;
   height: 26px;
   border-radius: 50%;
   top: 95px;
   left: 44px;
-  -webkit-transform: rotate(-12deg);
-          transform: rotate(-12deg);
+  transform: rotate(-12deg);
 }
-
 #intro #cssPortrait #hairRightSide {
   position: absolute;
   background-color: black;
@@ -292,10 +247,8 @@ header nav a:hover {
   top: 51px;
   left: 113px;
   border-bottom-left-radius: 40px;
-  -webkit-transform: rotate(-15deg);
-          transform: rotate(-15deg);
+  transform: rotate(-15deg);
 }
-
 #intro #cssPortrait #hairRightPoint {
   position: absolute;
   width: 90px;
@@ -304,10 +257,8 @@ header nav a:hover {
   left: 89px;
   border-bottom: solid 25px black;
   border-radius: 0 0 0 100%;
-  -webkit-transform: rotate(-105deg);
-          transform: rotate(-105deg);
+  transform: rotate(-105deg);
 }
-
 #intro #cssPortrait #hairRightString {
   position: absolute;
   width: 90px;
@@ -316,13 +267,11 @@ header nav a:hover {
   left: 99px;
   border-bottom: solid 25px black;
   border-radius: 0 0 0 100%;
-  -webkit-transform: rotate(-120deg);
-          transform: rotate(-120deg);
+  transform: rotate(-120deg);
 }
-
 #intro #cssPortrait #neck {
   position: absolute;
-  background-color: #e0b1ab;
+  background-color: rgb(224, 177, 171);
   width: 35px;
   height: 30px;
   top: 150px;
@@ -331,11 +280,10 @@ header nav a:hover {
   border-bottom-right-radius: 50%;
   z-index: -1;
 }
-
 #intro #cssPortrait #neck::after {
   content: "";
   position: absolute;
-  background-color: #be8881;
+  background-color: rgb(190, 136, 129);
   width: 35px;
   height: 10px;
   left: 0px;
@@ -343,18 +291,16 @@ header nav a:hover {
   border-bottom-right-radius: 50%;
   z-index: -1;
 }
-
 #intro #cssPortrait #shoulder {
   position: absolute;
   background-color: maroon;
   width: 130px;
   height: 40px;
-  border-radius: 40% 40% 50% 50% / 30% 30% 70% 70%;
+  border-radius: 40% 40% 50% 50%/30% 30% 70% 70%;
   margin-top: 161px;
   margin-left: 35px;
   z-index: -2;
 }
-
 #intro #cssPortrait #background {
   position: absolute;
   width: 203px;
@@ -367,60 +313,48 @@ header nav a:hover {
 
 @-webkit-keyframes slideUp {
   from {
-    -webkit-transform: translateY(50%);
-            transform: translateY(50%);
+    transform: translateY(50%);
     opacity: 0;
   }
   to {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
+    transform: translateY(0);
     opacity: 1;
   }
 }
 
 @keyframes slideUp {
   from {
-    -webkit-transform: translateY(50%);
-            transform: translateY(50%);
+    transform: translateY(50%);
     opacity: 0;
   }
   to {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
+    transform: translateY(0);
     opacity: 1;
   }
 }
-
 .container {
   background-color: rgba(255, 255, 255, 0.1);
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
-  -webkit-box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.2);
-          box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.2);
   border: 1px solid rgba(255, 255, 255, 0.3);
   -webkit-animation: 1.5s ease-out slideUp;
           animation: 1.5s ease-out slideUp;
   margin: 40px auto 100px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   position: relative;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
   width: 90%;
   max-width: 1300px;
   border-radius: 25px;
   padding-bottom: 40px;
 }
-
 .container .title {
   background-color: rgba(255, 255, 255, 0.7);
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
-  -webkit-box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.2);
-          box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.2);
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
@@ -431,15 +365,13 @@ header nav a:hover {
   text-transform: uppercase;
   color: black;
 }
-
 .container .project {
   background-color: rgba(255, 255, 255, 0.2);
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
-  -webkit-box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.2);
-          box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.2);
   border: 1px solid rgba(255, 255, 255, 0.3);
-  background: #020202;
+  background: rgb(2, 2, 2);
   position: relative;
   width: 26%;
   border-radius: 20px;
@@ -449,45 +381,38 @@ header nav a:hover {
   color: inherit;
   overflow: hidden;
 }
-
 .container .project:nth-child(2):before {
   background-image: url("media/projet1.jpg");
 }
-
 .container .project:nth-child(3):before {
   background-image: url("media/projet2.jpg");
 }
-
 .container .project:nth-child(4):before {
   background-image: url("media/projet3.jpg");
 }
-
 .container .project:nth-child(5):before {
   background-image: url("media/projet4.jpg");
 }
-
 .container .project:nth-child(6):before {
   background-image: url("media/projet5.jpg");
 }
-
 .container .project:nth-child(7):before {
   background-image: url("media/projet7.jpg");
 }
-
 .container .project:nth-child(8):before {
   background-image: url("media/projet6.jpg");
 }
-
 .container .project:nth-child(9):before {
   background-image: url("media/projet8.jpg");
 }
-
 .container .project:nth-child(10):before {
   background-image: url("media/projet9.jpg");
 }
-
+.container .project:nth-child(11):before {
+  background-image: url("media/projet10.jpg");
+}
 .container .project:before {
-  content: ' ';
+  content: " ";
   display: block;
   position: absolute;
   left: 0;
@@ -502,17 +427,14 @@ header nav a:hover {
   transition: opacity 0.5s;
   -webkit-transition: opacity 0.5s;
 }
-
 .container .project:hover:before {
   opacity: 0.7;
 }
-
 #about {
   background-color: rgba(255, 255, 255, 0.1);
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
-  -webkit-box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.2);
-          box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.2);
   border: 1px solid rgba(255, 255, 255, 0.3);
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -521,15 +443,11 @@ header nav a:hover {
   padding: 15px 60px 25px;
   border-radius: 20px;
   font-weight: bold;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
-
 #about #btnIn {
   left: -60px;
 }
-
 #about #btnCv {
   right: -60px;
 }
@@ -539,17 +457,14 @@ header nav a:hover {
   text-align: center;
   margin: 40px auto;
 }
-
 #techs #techno {
   margin-bottom: 10px;
 }
-
 #techs #techno .tech, #techs #techno .tech--main {
   background-color: rgba(255, 255, 255, 0.3);
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
-  -webkit-box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.2);
-          box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.2);
   border: 1px solid rgba(255, 255, 255, 0.3);
   background-color: rgba(255, 255, 255, 0.2);
   color: black;
@@ -566,30 +481,25 @@ header nav a:hover {
   padding: 15px;
   margin: 2px;
 }
-
 #techs #techno .tech--main {
   background-color: rgba(255, 255, 255, 0.5);
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
-  -webkit-box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.2);
-          box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.2);
   border: 1px solid rgba(255, 255, 255, 0.3);
-  -webkit-box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.4);
-          box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.4);
+  box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.4);
 }
 
 footer {
   background-color: rgba(255, 255, 255, 0.5);
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
-  -webkit-box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.2);
-          box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.2);
   border: 1px solid rgba(255, 255, 255, 0.3);
   padding: 5px 25px;
   text-align: center;
   color: black;
 }
-
 footer p {
   font-size: 18px;
 }
@@ -602,34 +512,27 @@ footer p {
     left: -56%;
   }
 }
-
 @media only screen and (max-width: 890px) {
   #nav-btn {
     background-color: #7c73ff;
     color: white;
     padding: 5px 25px;
     border-radius: 25px;
-    -webkit-box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.2);
-            box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.2);
+    box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.2);
     font-weight: bold;
     border: 1px solid rgba(255, 255, 255, 0.3);
   }
   #nav-btn:hover {
     background-color: #5335fd;
-    -webkit-box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.2);
-            box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.2);
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.2);
   }
   .container .project {
     width: 40%;
   }
 }
-
 @media only screen and (max-width: 600px) {
   nav {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     margin-bottom: 20px;
   }
   .container .project {
@@ -639,7 +542,7 @@ footer p {
     display: inline-block;
     position: relative;
     width: 45%;
-    height: calc(100vw * 0.4);
+    height: 40vw;
   }
   .illustration {
     left: -17%;
@@ -657,5 +560,4 @@ footer p {
     padding-left: 10px;
     padding-right: 10px;
   }
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
