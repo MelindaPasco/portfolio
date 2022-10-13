@@ -98,7 +98,7 @@ header {
             font-size: 40px;
         }
         a {
-            @include piles(#C48FFD, white);
+            @include piles(#b673fd, white);
             &:hover {
                 background-color: #D392FD;
                 box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.2);
@@ -313,7 +313,7 @@ header {
 }
 .container {
     @include glassmorph(0.1);
-    animation: 1.5s ease-out slideUp;
+    animation: 1s ease-out slideUp;
     margin: 40px auto 100px;
     display: flex;
     flex-wrap: wrap;
@@ -376,6 +376,9 @@ header {
         }
         &:nth-child(11):before {
             background-image: url('media/projet10.jpg');
+        }
+        &:nth-child(12):before {
+            background-image: url('media/projet3.jpg');
         }
     }
     .project:before {

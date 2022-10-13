@@ -102,7 +102,7 @@ header nav #logo {
   font-size: 40px;
 }
 header nav a {
-  background-color: #C48FFD;
+  background-color: #b673fd;
   color: white;
   padding: 5px 25px;
   border-radius: 25px;
@@ -338,8 +338,8 @@ header nav a:hover {
           backdrop-filter: blur(10px);
   box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.2);
   border: 1px solid rgba(255, 255, 255, 0.3);
-  -webkit-animation: 1.5s ease-out slideUp;
-          animation: 1.5s ease-out slideUp;
+  -webkit-animation: 1s ease-out slideUp;
+          animation: 1s ease-out slideUp;
   margin: 40px auto 100px;
   display: flex;
   flex-wrap: wrap;
@@ -410,6 +410,9 @@ header nav a:hover {
 }
 .container .project:nth-child(11):before {
   background-image: url("media/projet10.jpg");
+}
+.container .project:nth-child(12):before {
+  background-image: url("media/projet3.jpg");
 }
 .container .project:before {
   content: " ";
