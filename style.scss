@@ -363,22 +363,16 @@ header {
             background-image: url('media/projet5.jpg');
         }
         &:nth-child(7):before {
-            background-image: url('media/projet7.jpg');
+            background-image: url('media/projet6.jpg');
         }
         &:nth-child(8):before {
-            background-image: url('media/projet6.jpg');
+            background-image: url('media/projet7.jpg');
         }
         &:nth-child(9):before {
             background-image: url('media/projet8.jpg');
         }
         &:nth-child(10):before {
             background-image: url('media/projet9.jpg');
-        }
-        &:nth-child(11):before {
-            background-image: url('media/projet10.jpg');
-        }
-        &:nth-child(12):before {
-            background-image: url('media/projet3.jpg');
         }
     }
     .project:before {
@@ -484,6 +478,9 @@ footer {
     nav {
         flex-direction: column;
         margin-bottom: 20px;
+        #logo {
+            text-align: center;
+        }
     }
     .container .project {
         width: 70%;
