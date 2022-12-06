@@ -440,13 +440,13 @@ header nav a:hover {
   padding: 15px 60px 25px;
   border-radius: 20px;
   font-weight: bold;
-  justify-content: center;
+  text-align: center;
 }
 #about #btnIn {
-  left: -60px;
+  left: 20px;
 }
 #about #btnCv {
-  right: -60px;
+  right: 20px;
 }
 
 #techs {
