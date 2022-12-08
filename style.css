@@ -380,6 +380,8 @@ header nav a:hover {
   text-decoration: none;
   color: inherit;
   overflow: hidden;
+  opacity: 0;
+  transition: all 2s;
 }
 .container .project:nth-child(2):before {
   background-image: url("media/projet1.jpg");
@@ -426,6 +428,9 @@ header nav a:hover {
 }
 .container .project:hover:before {
   opacity: 0.7;
+}
+.container .show {
+  opacity: 1;
 }
 #about {
   background-color: rgba(255, 255, 255, 0.1);
